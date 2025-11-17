@@ -59,7 +59,7 @@ const Countdown = ({ onComplete }) => {
         initial={{ scale: 0.5, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         exit={{ scale: 0.5, opacity: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 1 }}   //.....
         className="count-number"
       >
         {count}
@@ -72,7 +72,7 @@ const SlideIntro = ({ next }) => (
   <motion.div className="slide" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
     <h1 className="text-glow">✨ A Wonderful Soul was Born today ✨</h1>
     <h3>Across the miles… something heartfelt is coming for you...</h3>
-    <p>Relax, something funny (and definitely not edible) is coming.</p>
+    <p>Oops! Not edible, just silly😜🍰</p>
     <button className="surprise-button" onClick={next}>🎁 Start the Surprise</button>
   </motion.div>
 );

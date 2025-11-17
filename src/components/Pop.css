@@ -97,19 +97,34 @@ body {
 }
 .flame {
   position: absolute;
-  top: -25px;
+  top: -20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 10px;
-  height: 10px;
-  background: radial-gradient(circle, #fff500 10%, #ff8a00 60%, transparent 100%);
+  width: 12px;
+  height: 20px;
+  background: radial-gradient(circle, #ff0 0%, #ff4500 60%, transparent 80%);
   border-radius: 50%;
   opacity: 0;
+  transition: opacity 0.3s ease;
 }
+
 .flame.lit {
   opacity: 1;
   animation: flicker 0.2s infinite alternate;
 }
+
+/* Sprinkles */
+.sprinkle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: red;
+  top: 10px;
+  left: 20px;
+  animation: wiggle 2s infinite alternate;
+}
+
 @keyframes flicker {
   from { transform: translateX(-50%) scale(1); filter: drop-shadow(0 0 10px #ff9); }
   to { transform: translateX(-50%) scale(1.1); filter: drop-shadow(0 0 20px #fff); }
