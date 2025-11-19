@@ -48,7 +48,7 @@ const Countdown = ({ onComplete }) => {
       onComplete();
       return;
     }
-    const timer = setTimeout(() => setCount(count - 1), 1000);
+    const timer = setTimeout(() => setCount(count - 1), 2000);
     return () => clearTimeout(timer);
   }, [count, onComplete]);
 
@@ -147,7 +147,7 @@ const SlideBalloons = ({ next }) => {
 
 const SlideMessage = () => (
   <motion.div className="slide" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-    <h1 className="text-glow">💖 A Msg from My Heart to My Anonymous 💖</h1>
+    <h1 className="text-glow">💖 A Msg from Heart to My Anonymous 💖</h1>
     <div className="final-card-message">
       <p>To My Dearest,<br/>
         Your presence adds warmth to days that would otherwise feel ordinary.
